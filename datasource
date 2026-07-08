@@ -1,0 +1,22 @@
+import random
+
+def get_live_comments(keyword, count):
+    demo_comments = [
+        f"I love {keyword}, it's amazing!",
+        f"{keyword} is very useful in real life",
+        f"I hate problems in {keyword}",
+        f"{keyword} makes life easier",
+        f"Debugging {keyword} is frustrating",
+        f"{keyword} is the future technology",
+        f"{keyword} helps in career growth",
+        f"{keyword} is overrated sometimes",
+        f"I enjoy learning {keyword}",
+        f"{keyword} is difficult but powerful",
+        f"{keyword} has great opportunities",
+        f"{keyword} changed the world",
+        f"{keyword} is boring",
+        f"{keyword} is exciting",
+        f"{keyword} is confusing for beginners"
+    ]
+
+    return random.sample(demo_comments, min(count, len(demo_comments)))
